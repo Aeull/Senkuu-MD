@@ -24,10 +24,10 @@ module.exports = {
 		let data2 = db.cekDatabase("welcome", "id", msg.from);
 		if (args[0] == "on") {
 			if (data2) throw "been active before";
-			db.modified("welcome", { id: msg.from, teks: "Welcome to @subject good luck @user", lastUpdate: false });
-			await msg.reply(`Welcome turned on successfully`);
+			db.modified("welcome", { id: msg.from, teks: "Welcome to @subject good luck @user", lastUpdate: true });
+			await msg.reply(`Selamat datang berhasil diaktifkan`);
 		} else if (args[0] == "off") {
-			if (!data2) throw "not active before";
+			if (!data2) throw "sebelumnya tidak aktif";
 			data.splice(getPosition(msg.from, data), 1);
 			require("fs").writeFileSync("./lib/database/welcome.json", JSON.stringify(data, null, 2));
 			await msg.reply("successfully delete session welcome in this group");
