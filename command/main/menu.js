@@ -74,13 +74,13 @@ module.exports = {
           }
         }
 			menu = global.footer + " *[ Beta✓ ]*\n\n"
-			menu += monospace(" ❏ Library : Baileys-MD") + "\n"
-			menu += monospace(" ❏ Author : " + "@" + config.owner[0].split("@")[0] )+ "\n"
-			menu += monospace(" ❏ Prefix : [ " + pref + " ]") + "\n"
-			menu += monospace(" ❏ Date : " + date) + "\n"
-			menu += monospace(" ❏ Time : " + time) + "\n"
-		        menu += monospace(" ❏ Speed :  " + processTime(msg.messageTimestamp, moment()) + " Seccond") + "\n\n"
-			menu += monospace(`Halo, @${sender.split("@")[0]} Ini Daftar Perintah saya`) +`\n\n`;
+			menu += monospace(" ʟɪʙʀᴀʀʏ : ʙᴀɪʟᴇʏꜱ-ᴍᴅ") + "\n"
+			menu += monospace(" ᴀᴜᴛʜᴏʀ  : " + "@" + config.owner[0].split("@")[0] )+ "\n"
+			menu += monospace(" ᴘʀᴇꜰɪx  : [ " + pref + " ]") + "\n"
+			menu += monospace(" ᴅᴀᴛᴇ    : " + date) + "\n"
+			menu += monospace(" ᴛɪᴍᴇ    : " + time) + "\n"
+		        menu += monospace(" ꜱᴘᴇᴇᴅ   :  " + processTime(msg.messageTimestamp, moment()) + " Seccond") + "\n\n"
+			menu += monospace(`*Halo*, @${sender.split("@")[0]} *Ini Daftar Perintah saya^_^*`) +`\n\n`;
 			const keys = Object.keys(category)
 			menu += "*乂 CATEGORY MENU*\n"
 			for(let o of keys){
