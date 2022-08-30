@@ -80,7 +80,7 @@ module.exports = {
 			menu += monospace(" ᴅᴀᴛᴇ    : " + date) + "\n"
 			menu += monospace(" ᴛɪᴍᴇ    : " + time) + "\n"
 		        menu += monospace(" ꜱᴘᴇᴇᴅ   :  " + processTime(msg.messageTimestamp, moment()) + " Seccond") + "\n\n"
-			menu += monospace(`*Halo*, @${sender.split("@")[0]} *Ini Daftar Perintah saya^_^*`) +`\n\n`;
+			menu += monospace(`ʜᴀʟʟᴏ, @${sender.split("@")[0]} ɪɴɪ ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ ꜱᴀʏᴀ`) +`\n\n`;
 			const keys = Object.keys(category)
 			menu += "*乂 CATEGORY MENU*\n"
 			for(let o of keys){
