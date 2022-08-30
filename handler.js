@@ -196,15 +196,15 @@ module.exports = handler = async (mek, conn, map) => {
 			await require("delay")(3000);
 			await conn.updateBlockStatus(msg.sender, "block");
 			await conn.sendMessage(config.owner[0], {
-				text: "*• Blocked Detected Number +212*\n\nwa.me/" + msg.sender.split("@")[0],
+				text: "*• Nomor Terdeteksi Diblokir +212*\n\nwa.me/" + msg.sender.split("@")[0],
 			});
 		}
 		if (require("awesome-phonenumber")("+" + msg.sender.split("@")[0]).getCountryCode() == "212") return;
 		
 	// [ Response ]
 	global.respon = {
-	  wait: "Tunggu sebentar, Permintaan anda sedang diproses..",
-	  success: "Done ✓",
+	  wait: "*_Waittt..._*",
+	  success: "*Done ✓*",
 	  error:{
 	    cmd: "Maaf command error, Silahkan hubungi Owner!!",
 	    lv: ["Link tidak valid!!","Link nya mana?"],
