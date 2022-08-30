@@ -8,7 +8,7 @@ module.exports = {
     try {
       emo = await sc.emoji(args[0])
       const packInfo = {
-        packname: "Senkuu BOT",
+        packname: "ArullBotz",
 	  		author: "Beta✓",
        };
        const { sticker } = require("../../lib/convert");
