@@ -9,12 +9,12 @@ module.exports = {
 	category: "converter",
 	desc: "Sending Emoji stickers plus other emojis",
 	wait: true,
-	query: "Enter Emoji\nExample: .emojimix ☹️+😅",
+	query: "Masukkan Emoji\nContoh: .emojimix ☹️+😅",
 	isSpam: true,
 	async run({ msg, conn }, { q, map, args, cmdNya }) {
 		try {
 		 const packInfo = {
-  			packname: "Senkuu BOT",
+  			packname: "ArullBotz",
 	  		author: "Beta✓",
        };
      emojis = await emojiStringToArray(await q.replace('+', ''))
